@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Deezer</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<style type="text/css">
+		
+		#resultats {border-radius: 5px; border: 2px solid #001AD2;background: rgba(176, 182, 214, 0.31);margin-top: 25px; display: none;}
+		.musique{ margin: 10px 0 0px 0;}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="text-align:center;margin:0 auto;">
+
+				<h3>Recherche Deezer</h3>
+
+				<form action="#" id="search-form" class="col-md-6 col-md-offset-3">
+					<input type="text" id="q" placeholder="Entrez un titre ou album  ici ..">
+					<input type="submit" class="btn btn-default">
+					
+				</form>
+				
+			</div>
+		</div>
+		
+		<!-- Balise audio -->
+		<audio id="preview"></audio>
+
+	<!-- Resultat -->
+	
+	<div class="row">
+		<div id="resultats" class="col-md-12"></div>
+	</div>
+
+	</div> <!-- fin container -->
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="deezer.app.js"></script>
+</body>
+</html>
